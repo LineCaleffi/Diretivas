@@ -1,0 +1,19 @@
+<h1>Usando property binding:</h1>
+<h4>Ícone:
+    <!--ao clicar na estrela ela fica "cheia", se clicar de novo ela fica vazia -->
+    <i class="bi" [class.bi-star]="!meuFavorito" [class.bi-star-fill]="meuFavorito" (click)="onClick()"></i> 
+</h4>
+
+<br>
+
+<h1>Com *ngClass:</h1>
+<h4>Ícone:
+    <!--ao clicar na estrela ela fica "cheia", se clicar de novo ela fica vazia -->
+    <i class="bi" [ngClass]="{   
+        'bi-star': !meuFavorito2,
+        'bi-star-fill': meuFavorito2
+        }"
+    (click)="onClick2()"></i>
+</h4>
+
+<!-- AULA #29 - curso angular - Loiane Groner -->
