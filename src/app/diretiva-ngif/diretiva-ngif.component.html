@@ -1,0 +1,26 @@
+<h4>*ngIf</h4>
+
+<!-- Se o tamanho do 'cursos' for maior que 0 ele mostra, senão não entra na div -->
+<div *ngIf=" cursos.length > 0 " >
+    <li>{{ cursos }}</li>
+</div>
+
+<!-- Se o tamanho do 'cursos' for igual a 0 ele entra na div -->
+<div *ngIf=" cursos.length == 0 " >
+    Não existem cursos para serem listados.
+</div>
+
+<br><br>
+
+<button (click)="onMostrarCursos()">Mostrar ou esconder cursos</button>
+<div *ngIf=" !mostrarCursos" >
+    <li> {{ cursos }} </li>
+</div>
+
+
+<h5>hidden como alternativa</h5>
+<div [hidden]="!mostrarCursos"> Não existem cursos para serem listados</div>
+<div [hidden]="mostrarCursos"><li>{{ cursos }}</li></div>
+
+<!-- Hidden - recomendado para árvore de elementos pequena -->
+<!--ngIf - recomendado para árvore de elementos grandes-->

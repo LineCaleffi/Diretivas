@@ -1,0 +1,24 @@
+<p>diretiva-ngswitch works!</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <!-- [class.active]="aba == 'xxxxx'" ---- fica destacado a aba que está selecionada -->
+          <a class="nav-item nav-link" [class.active]="aba == 'home'" (click)="aba = 'home'">Home</a>
+          <a class="nav-item nav-link" [class.active]="aba == 'mapa'" (click)="aba = 'mapa'">Mapa</a> 
+          <a class="nav-item nav-link" [class.active]="aba == 'lista'" (click)="aba = 'lista'">Lista</a>
+      </ul>
+    </div>
+</nav>
+
+<div class="container" [ngSwitch]="aba">
+    <br>
+    <p *ngSwitchCase="'mapa'"> Modo Mapa ativado</p> <!-- IF ELSE >>>>>>se aba == 'mapa' mostra 'Modo Mapa ativado'-->
+    <p *ngSwitchCase="'lista'"> Modo Lista ativado</p> <!-- IF ELSE >>>>>> se aba == 'lista' mostra 'Modo Lista ativado'-->
+    <p *ngSwitchDefault><b>HOME</b></p><!-- ELSE >>>>>> senão mostra HOME-->
+</div>
+
+<!--
+    ngSwitch - IF
+    ngSwitchCase - IF ELSE
+    ngSwitchDefault - ELSE
+-->
