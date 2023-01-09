@@ -1,0 +1,14 @@
+<h3>diretiva-ngfor </h3>
+
+<ul>
+    <!-- o i mostra 0,1,2,3,4,5 .... conforme definido na component.ts-->
+    <li *ngFor="let curso of cursos, let i = index">{{ i + 1 }} - {{ curso }}</li>
+</ul>
+
+<h2>Pokemons com *ngFor:</h2>
+<!-- pega o array pokedex -->
+<ul *ngFor="let pokedex of pokedex"> 
+    <li><b>Nome: </b>{{ pokedex.nome }}</li>
+    <li><b>Tipo: </b>{{ pokedex.tipo }}</li>
+    <li><b>Tem evolução: </b>{{ pokedex.evolucao }}</li>
+</ul>
