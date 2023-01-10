@@ -1,0 +1,9 @@
+.panel-heading{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(199, 255, 236);
+}
+
+.panel-body{
+    font-size: 15px;
+}

@@ -14,6 +14,8 @@ import { DiretivaNgclassComponent } from './diretiva-ngclass/diretiva-ngclass.co
 import { DiretivaNgstyleComponent } from './diretiva-ngstyle/diretiva-ngstyle.component';
 
 import { FormsModule } from '@angular/forms';
+import { DiretivaNgcontentComponent } from './diretiva-ngcontent/diretiva-ngcontent.component';
+import { SharedDirective } from './shared.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FormsModule } from '@angular/forms';
     DiretivaNgswitchComponent,
     DiretivaNgforComponent,
     DiretivaNgclassComponent,
-    DiretivaNgstyleComponent
+    DiretivaNgstyleComponent,
+    DiretivaNgcontentComponent,
+    SharedDirective
   ],
   imports: [
     BrowserModule,

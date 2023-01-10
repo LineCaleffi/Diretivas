@@ -1,0 +1,12 @@
+<h2>Aula de ngContent</h2>
+<br>
+<div class="panel panel-default">
+    <div class="panel-heading">Titulo</div>
+    <div class="panel-body"> <ng-content></ng-content></div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading"><ng-content select=".titulo"></ng-content></div>
+    <div class="panel-body"> <ng-content select=".corpo"></ng-content></div>
+    <div class="panel-body"> <ng-content select=".conteudo"></ng-content></div>
+</div>
