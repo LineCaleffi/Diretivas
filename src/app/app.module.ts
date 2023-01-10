@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { DiretivaNgcontentComponent } from './diretiva-ngcontent/diretiva-ngcontent.component';
 import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
 import { DiretivaCustomizadaComponent } from './diretiva-customizada/diretiva-customizada.component';
+import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 import { HighlightDirective } from './shared/highlight.directive';
 
 @NgModule({
@@ -30,6 +31,7 @@ import { HighlightDirective } from './shared/highlight.directive';
     DiretivaNgcontentComponent,
     FundoAmareloDirective,
     DiretivaCustomizadaComponent,
+    HighlightMouseDirective,
     HighlightDirective
   ],
   imports: [
