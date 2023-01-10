@@ -15,6 +15,8 @@ import { DiretivaNgstyleComponent } from './diretiva-ngstyle/diretiva-ngstyle.co
 
 import { FormsModule } from '@angular/forms';
 import { DiretivaNgcontentComponent } from './diretiva-ngcontent/diretiva-ngcontent.component';
+import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
+import { DiretivaCustomizadaComponent } from './diretiva-customizada/diretiva-customizada.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { DiretivaNgcontentComponent } from './diretiva-ngcontent/diretiva-ngcont
     DiretivaNgforComponent,
     DiretivaNgclassComponent,
     DiretivaNgstyleComponent,
-    DiretivaNgcontentComponent
+    DiretivaNgcontentComponent,
+    FundoAmareloDirective,
+    DiretivaCustomizadaComponent
   ],
   imports: [
     BrowserModule,
