@@ -7,6 +7,7 @@ import { Component,OnInit } from '@angular/core';
 })
 export class DiretivaCustomizadaComponent implements OnInit{
   mostrarCursos: boolean = false;
+  mostrarCursos2: boolean = false;
 
   constructor() { }
 
@@ -15,5 +16,9 @@ export class DiretivaCustomizadaComponent implements OnInit{
 
   onMostrarCursos(){
     this.mostrarCursos = !this.mostrarCursos;
+  }
+
+  onMostrarCursos2(){
+    this.mostrarCursos2 = !this.mostrarCursos2;
   }
 }

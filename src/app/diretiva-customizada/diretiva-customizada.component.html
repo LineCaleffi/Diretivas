@@ -43,3 +43,11 @@
       Não existem cursos para serem listados.
     </div>
 </ng-template>
+<br><br>
+
+<h1> Testando todos as diretivas customizadas em uma só</h1>
+<div *ngIf="mostrarCursos2" [highlight]="'#f86060'" [defaultColor]="'#ffc8c8'"> Testando com highlight customizado</div>
+<div *ngElse="mostrarCursos2" appHighlight>Testando só com appHighlight - "passe o mouse em cima de mim"</div>
+<button (click)="onMostrarCursos2()" appFundoAmarelo>Mostrar ou esconder - ngElse - fundoAmarelo</button>
+
+
