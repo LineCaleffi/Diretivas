@@ -31,3 +31,15 @@
 <p [highlight]="'#95ff78'" [defaultColor]="'#e485fc'">
     Texto com highlight com cores cutomizadas
 </p>
+
+<br>
+<h2>Diretiva Estrutura customizada - ngElse</h2>
+<div *ngIf="mostrarCursos"> Lista cursos aqui.</div>
+<div *ngElse="mostrarCursos">Não existem cursos para serem listados</div>
+<button (click)="onMostrarCursos()">Mostrar ou esconder cursos</button>
+
+<ng-template [ngElse]="mostrarCursos">
+    <div>
+      Não existem cursos para serem listados.
+    </div>
+</ng-template>
