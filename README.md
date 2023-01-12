@@ -15,5 +15,8 @@ São as funções que serão executadas sempre que o compilador do Angular as en
 - ngSwitchCase
 - ngSwitchDefault 
 - ngContent
+- ngClass
+- ngStyle
+
 
 By: Aline Caleffi
